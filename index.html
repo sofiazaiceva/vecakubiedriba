@@ -973,6 +973,31 @@
     .book-card{ flex-direction:column; }
     .book-card img{ width:100px; align-self:flex-start; }
   }
+
+  /* ===== lightbox: mobile fix ===== */
+  @media (max-width:620px){
+    .poster-lightbox{ padding:56px 12px 32px; }
+    .lb-frame{
+      position:relative;
+      display:block;
+      max-width:94vw;
+    }
+    .lb-frame img{
+      display:block;
+      max-width:94vw;
+      max-height:72vh;
+    }
+    .lb-nav{
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      width:40px;
+      height:40px;
+    }
+    .lb-prev{ left:4px; }
+    .lb-next{ right:4px; }
+    .lb-nav[hidden]{ display:none; }
+  }
 </style>
 </head>
 <body>
@@ -1089,7 +1114,7 @@
         <div class="events-grid">
           <article class="event-card">
             <div class="event-card-media">
-              <img src="EKSKURSIJA_Vecaki_2026.png" alt="Eko-ekskursija Vecāķu putni">
+              <img src="EKSKURSIJA_Vecaki_2026-web.jpg" alt="Eko-ekskursija Vecāķu putni">
               <span class="event-date-badge"><span class="lv">4. jūlijs</span><span class="en">4 July</span></span>
             </div>
             <div class="event-card-body">
@@ -1107,7 +1132,7 @@
 
           <article class="event-card">
             <div class="event-card-media">
-              <img src="PAGALMS_Vecaki_2026.png" alt="Mazo prieku pagalms">
+              <img src="PAGALMS_Vecaki_2026-web.jpg" alt="Mazo prieku pagalms">
               <span class="event-date-badge"><span class="lv">18. jūlijs</span><span class="en">18 July</span></span>
             </div>
             <div class="event-card-body">
@@ -1125,7 +1150,7 @@
 
           <article class="event-card">
             <div class="event-card-media">
-              <img src="KONCERTS_Vecaki_2026.png" alt="Vecāķi. Saulriets. Ērģeles.">
+              <img src="KONCERTS_Vecaki_2026-web.jpg" alt="Vecāķi. Saulriets. Ērģeles.">
               <span class="event-date-badge"><span class="lv">8. augusts</span><span class="en">8 August</span></span>
             </div>
             <div class="event-card-body">
